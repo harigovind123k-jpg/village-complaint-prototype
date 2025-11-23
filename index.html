@@ -1,94 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Village Complaint Portal</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 20px;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-        .form-container {
-            margin-top: 30px;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            display: inline-block;
-        }
-        input, select, textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border-radius: 4px;
-            border: 1px solid #ddd;
-        }
-        button {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #45a049;
-        }
-    </style>
+    <title>Village Complaint System</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>Village Complaint Portal</h1>
-    </header>
+<h1>Village Complaint System</h1>
 
-    <div class="form-container">
-        <h2>Register a Complaint</h2>
-        <form>
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" placeholder="Your Name"><br>
-
-            <label for="phone">Phone:</label><br>
-            <input type="text" id="phone" name="phone" placeholder="Your Phone Number"><br>
-
-            <label for="category">Category:</label><br>
-            <select id="category" name="category">
-                <option value="water">Water</option>
-                <option value="electricity">Electricity</option>
-                <option value="road">Road</option>
-                <option value="health">Health</option>
-            </select><br>
-
-            <label for="description">Description:</label><br>
-            <textarea id="description" name="description" placeholder="Describe your complaint..." rows="4"></textarea><br>
-
-            <label for="photo">Upload Photo:</label><br>
-            <input type="file" id="photo" name="photo"><br>
-
-            <button type="submit">Submit Complaint</button>
-        </form>
-    </div>
-
-    <footer>
-        <p>&copy; 2025 Village Complaint Portal</p>
-    </footer>
+<div class="menu">
+    <a href="register.html" class="btn">Register Complaint</a>
+    <a href="track.html" class="btn">Track Complaint Status</a>
+    <a href="admin.html" class="btn">Admin Login</a>
+</div>
 
 </body>
 </html>
